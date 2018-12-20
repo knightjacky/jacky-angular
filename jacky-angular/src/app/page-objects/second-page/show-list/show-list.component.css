@@ -1,0 +1,22 @@
+fieldset{
+    border: none;
+    margin: 5%;
+    padding: 8px;
+}
+.text{
+    border: 1px solid #bbb;
+}
+input{
+    outline: none;
+    box-shadow: 3px 3px 1px rgb(0, 0, 0, 0.2);
+    border: 1px solid rgb(0,0, 0, 0.5);
+}
+input:invalid{
+    border-color: red;
+}
+input:valid{
+    border-color: green;
+}
+input:required{
+    border-width: 3px;
+}

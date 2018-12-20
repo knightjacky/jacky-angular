@@ -1,0 +1,31 @@
+<fieldset>
+<input type = "text" (change) = "saveData($event)">
+<button (click) = "addItem(dataContainer)">Add To Do List</button>
+</fieldset>
+<fieldset id="csstest">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" class="text" placeholder="example@gmail.com">
+</fieldset>
+<fieldset id="csstest">
+    <label for="zip">Zip*</label>
+    <input type="text" name="zip" id="zip" class="text" pattern="^[0-9]{5}(?:-[0-9]{4})?$" placeholder="M9R 0B1" required>
+</fieldset>
+<fieldset id="csstest" disabled>
+  <label for="city">City</label>
+  <input type="text" name="city" id="city" class="text" placeholder="Toronto">
+</fieldset>
+<fieldset id="csstest">
+  <div>
+    <input type="radio" name="type" id ="home" value="home">
+    <label for="home">Home</label>
+  </div>
+    <div>
+    <input type="radio" name="type" id="office" value="office">
+    <label for="office">Office</label>
+  </div>
+    <div>
+    <input type="radio" name="type" id="vacation" value="vacation">
+    <label for="store">vacation</label>
+  </div>
+</fieldset>
+<div>*required</div>

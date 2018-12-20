@@ -1,0 +1,9 @@
+<fieldset>
+<table style="width:60%">
+  <tr *ngFor = "let item of textLabel">
+    <td><label>{{item}}</label></td>
+    <td><button (click) = "strikeData(item)">Cross Out</button></td>
+    <td><button (click) = "removeData(item)">Remove</button></td>
+  </tr>
+</table>
+</fieldset>

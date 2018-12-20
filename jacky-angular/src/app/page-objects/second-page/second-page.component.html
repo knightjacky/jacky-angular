@@ -1,0 +1,8 @@
+<div style="text-align:center">
+    <h1>
+      To Do List
+    </h1>
+</div>
+<div style="text-align:right"><a href="">Back Home Page</a></div>
+<app-show-list (clickChildEvent)="retrieveData($event)" [textLabel] = "toDoList"></app-show-list>
+<app-add-item (clickChildEvent)="retrieveData($event)" [workList] = "toDoList"></app-add-item>

@@ -1,0 +1,36 @@
+<div style="text-align:center">
+  <h1>
+    To Do List Creating By Object 
+  </h1>
+</div>
+<div style="text-align:right"><a href="">Back Home Page</a></div>
+<fieldset>
+  <table>
+    <tr *ngFor="let object of toDoObjectList">
+      <td *ngIf="object.flag === true">
+        <button (click)="pullItemBack(object.id)">pull it back</button>
+      </td>
+      <td *ngIf="object.flag === true" class="text-font-strike">
+        {{object.item}}
+      </td>
+      <td *ngIf="object.flag === true">
+        <button (click)="removeObject(object.id)">remove it</button>
+      </td>
+      <td *ngIf="object.flag === false">
+        {{object.item}}
+      </td>
+      <td *ngIf="object.flag === false" class="text-font">
+        <button (click)="strikeItem(object.id)">cross text out</button>
+      </td>
+      <td *ngIf="object.flag === false">
+        <button (click)="removeObject(object.id)">remove it</button>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+<fieldset>
+  <div>
+    <input type="text" (change)="receiveData($event)">
+    <button (click)="addObject(itemName)">add new work</button>
+  </div>
+</fieldset>
